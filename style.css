@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600&display=swap');
+
+:root{
+  --green: #83efd0;
+  --red:#ef7b54;
+  --background:#f8f1e9;
+  --gradient-1:#343e63;
+  --gradient-2:#2a3352;
+}
+
+/* font-family: 'Baloo Bhai 2', cursive; */
+
+html{
+  font-size: 10px;
+  font-weight: 300;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+body{
+  width:90vw ;
+  margin: o auto;
+  background: radial-gradient(var(--gradient-2),var(--gradient-1));
+}
+main{
+  text-align: center;
+  background:#f8f1e9 ;
+  border: solid #ef7b54;
+  border-width: 0 8px 8px 8px;
+  min-height: 80vh;
+  border-radius: 0 0 3rem 3rem ;
+  padding: 1rem;
+  color:#1f2933;
+}
+h2{
+  font-size: 2rem;
+  margin: 8rem  0 ;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.button-wraper {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: #83e1d0;
+  padding: 2rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+button:last-child{
+  background:var(--red) ;
+  border-radius: 0 0 1rem 1rem;
+}
+
+h3{
+font-size: 2rem;
+}
+
+input{
+  border: 1px solid lightgrey;
+  background: transparent;
+  margin:2rem 0 ;
+  padding: 1rem;
+  width: 16rem;
+  text-align: center;
+
+}
+
+#range {
+  display: flex;
+  background: var(--green);
+  height:50px;
+  padding: 0;
+  margin:0 0 4rem 0 ;
+}
+
+#rangeOutput {
+  font-size: 1.6rem ;
+}
+
+.states {
+  text-align: left;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info span{
+  font-size: 1.6rem;
+}
+
+#newGameButton{
+  border-radius: 
+  9px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.flash {
+  animation:flash 1s infinite;
+
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@media(min-width:800px) {
+
+body{
+  width: 60vw;
+}
+
+
+
+
+
+}
